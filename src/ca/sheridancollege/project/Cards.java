@@ -8,8 +8,9 @@ package ca.sheridancollege.project;
 /**
  *
  * @author moosundammy
+ *         thithanhvanpham
  */
-public class CardsClass {
+public class Cards {
     
     //Attributes of class
     private Numbers numbers;
@@ -22,13 +23,13 @@ public class CardsClass {
     public enum Suits{HEART, CLUB, SPADE, DIAMOND;}
     
     //Constructor
-    public CardsClass (Numbers numbers, Suits suits){
+    public Cards (Numbers numbers, Suits suits){
         this.numbers = numbers;
         this.suits = suits;
     }
     
     //Constructor overflow 
-    public CardsClass(CardsClass card){
+    public Cards(Cards card){
         this.suits = card.getSuits();
         this.numbers = card.getNumbers();
     }   

@@ -8,16 +8,17 @@ package ca.sheridancollege.project;
 /**
  *
  * @author moosundammy
+ *         thithanhvanpham
  */
-public abstract class PlayersClass {
+public abstract class Player {
     
     //Attributes of class
-    private HandClass hand;
+    private Hand hand;
     private String name;
     
     //New Player
-    public PlayersClass(){
-        this.hand = new HandClass();
+    public Player(){
+        this.hand = new Hand();
         this.name = "";
     }
     
@@ -32,8 +33,8 @@ public abstract class PlayersClass {
     }
 
     //Getters and Setters
-    public HandClass getHand() {return hand;}
-    public void setHand(HandClass hand) {this.hand = hand;}
+    public Hand getHand() {return hand;}
+    public void setHand(Hand hand) {this.hand = hand;}
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
     

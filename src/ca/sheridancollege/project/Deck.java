@@ -10,15 +10,16 @@ import java.util.Collections;
 
 /**
  * @author moosundammy
+ *         thithanhvanpham
  * 
  */
-public class DeckClass {
+public class Deck {
   
     //Attributes of class
-    private ArrayList<CardsClass> deck;
+    private ArrayList<Cards> deck;
 
     //Constructor Class
-    public DeckClass(){
+    public Deck(){
         deck = new ArrayList<>();
     }
     
@@ -26,11 +27,11 @@ public class DeckClass {
     public void createDeck(){
         
         //Nested collections Loop to get the suit and number to create the deck
-        for (CardsClass.Suits cardSuit: CardsClass.Suits.values()){
-            for (CardsClass.Numbers cardNumber: CardsClass.Numbers.values()){ 
+        for (Cards.Suits cardSuit: Cards.Suits.values()){
+            for (Cards.Numbers cardNumber: Cards.Numbers.values()){ 
                
                //New card
-               deck.add(new CardsClass(cardNumber,cardSuit));
+               deck.add(new Cards(cardNumber,cardSuit));
             }
         }
     }
@@ -41,10 +42,10 @@ public class DeckClass {
     }
     
     //Method to draw a card
-    public CardsClass draw(){
+    public Cards draw(){
 
         //Taking the first card from the deck
-        CardsClass card = new CardsClass(deck.get(0));
+        Cards card = new Cards(deck.get(0));
         
         //Remove card from the deck
         deck.remove(0);
@@ -53,7 +54,7 @@ public class DeckClass {
     }
     
     //Method to add cards in the array
-    public void addCards(ArrayList<CardsClass> cards){
+    public void addCards(ArrayList<Cards> cards){
         deck.addAll(cards);
     }
     

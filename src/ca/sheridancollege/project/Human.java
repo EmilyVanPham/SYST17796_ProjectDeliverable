@@ -10,15 +10,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author moosundammy
+ * @author moosundammy 
+ *         thithanhvanpham
  */
-public class HumanClass extends PlayersClass {
+public class Human extends Player {
     
     //Scanner object
     Scanner input = new Scanner(System.in);
     
     //Create a new Player
-    public HumanClass() {
+    public Human() {
         super.setName("Player");
     }
     

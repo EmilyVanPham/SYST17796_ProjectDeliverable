@@ -10,27 +10,28 @@ import java.util.Scanner;
 /**
  *
  * @author moosundammy
+ *         thithanhvanpham
  */
-public class GameClass {
+public class Game {
     
     //Atributes and variables for game class
-    private DeckClass deck;
-    private DealerClass dealer;
-    private HumanClass human;
+    private Deck deck;
+    private Dealer dealer;
+    private Human human;
     
     private double money;
     private double bet;
        
     //contructor
-    public GameClass(){
+    public Game(){
         
         //Scanner object
         Scanner input = new Scanner(System.in);        
    
         //Create the Objects constructor
-        dealer = new DealerClass();
-        human = new HumanClass();
-        deck = new DeckClass();
+        dealer = new Dealer();
+        human = new Human();
+        deck = new Deck();
                   
         //initializing variables
         money = 150.0;

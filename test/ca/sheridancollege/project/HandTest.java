@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SheridanFundamentalsGroupProject;
+package ca.sheridancollege.project;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author moosundammy
  */
-public class HandClassTest {
+public class HandTest {
 
-    public HandClassTest() {
+    public HandTest() {
     }
 
     @BeforeClass
@@ -72,7 +72,7 @@ public class HandClassTest {
     
     
        @Test
-//    I am testing if it is Draw
+// I am testing if it is Draw
     public void testDrawCard() {
         player = 10;
         dealer = 10;

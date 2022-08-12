@@ -10,19 +10,20 @@ import java.util.ArrayList;
 /**
  *
  * @author moosundammy
+ *         thithanhvanpham
  */
-public class HandClass {
+public class Hand {
 
     //Atributes
-    ArrayList<CardsClass> hand;
+    ArrayList<Cards> hand;
 
     //Contructor
-    public HandClass(){
-        hand = new ArrayList<CardsClass>();
+    public Hand(){
+        hand = new ArrayList<Cards>();
     }
     
     //Draw from deck
-    public void drawDeck(DeckClass deck){
+    public void drawDeck(Deck deck){
         hand.add(deck.draw());
     }
     
@@ -31,7 +32,7 @@ public class HandClass {
         int number = 0, ace =0;
          
         //For loop statement to sum the card values
-        for (CardsClass card: hand){
+        for (Cards card: hand){
             switch (card.getNumbers()){
                 case ACE: ace++; break;
                 case TWO: number += 2; break;
@@ -59,7 +60,7 @@ public class HandClass {
         }
     
     //Get a card
-    public CardsClass getCard(int i){
+    public Cards getCard(int i){
         return hand.get(i);
     }
     
@@ -72,7 +73,7 @@ public class HandClass {
     @Override
     public String toString(){
         String output = "";
-        for(CardsClass card: hand){
+        for(Cards card: hand){
         output += card + "\n";
     }
     return output;

@@ -17,7 +17,7 @@ public class BlackJack {
     public static void main(String[] args) {
        
         //start game class object
-        GameClass game = new GameClass(); 
+        Game game = new Game(); 
 
     }
     

@@ -8,11 +8,12 @@ package ca.sheridancollege.project;
 /**
  *
  * @author moosundammy
+ *         thithanhvanpham
  */
-public class DealerClass extends PlayersClass{
+public class Dealer extends Player{
     
     //Set the Dealer name
-    public DealerClass(){
+    public Dealer(){
         super.setName("Dealer");
     }
         
